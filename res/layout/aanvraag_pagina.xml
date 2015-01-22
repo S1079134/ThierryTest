@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="0" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Persoonlijke gegevens"
+        android:id="@+id/textView"
+        android:layout_weight="0.17"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:singleLine="false"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.14">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Naam:"
+            android:id="@+id/naam"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="47dp"
+            android:id="@+id/naaminvoer"
+            android:hint="Naam"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Adres:"
+            android:id="@+id/adres"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Straatnaam + huisnummer"
+            android:id="@+id/adresinvoer"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Telnr:"
+            android:textColor="#ffffff"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefoonnummer"
+            android:id="@+id/telefooninvoer"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="E-mail:"
+            android:id="@+id/textView2"
+            android:textIsSelectable="false"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailinvoerr"
+            android:hint="E-mail"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_weight="1"
+            android:layout_marginTop="15dp"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Aanvraag gegevens"
+        android:id="@+id/textView3"
+        android:layout_weight="1"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:singleLine="false"
+        android:textColor="#ffffff" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Servicenaam:"
+            android:id="@+id/textView5"
+            android:textSize="20dp"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/servicenaaminvoer"
+            android:layout_gravity="center_horizontal|right"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textSize="18dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/aanvraagButton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/roundedbutton"
+            android:text="Bevestig service aanvraag"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/AnnuleerButtonBoek"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/roundedbutton"
+            android:textColor="#ffffff" 
+            android:text="Annuleer service aanvraag" />
+
+    </LinearLayout>
+
+</LinearLayout>
