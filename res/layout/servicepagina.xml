@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@id/mainlayout"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:weightSum="1" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/servicenaam"
+        android:text="Service"
+        android:phoneNumber="false"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:layout_alignBottom="@+id/serviceinfo" />
+
+    <TextView
+        android:id="@+id/serviceinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/productinfo"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="63dp"
+        android:phoneNumber="false"
+        android:text="Servicenaam"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/productinfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="129dp"
+        android:phoneNumber="false"
+        android:text="Info"
+        android:textColor="#ffffff"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="0dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="215dp"
+        android:id="@+id/linearLayout">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/aanvraagbutton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.15"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/roundedbutton"
+            android:text="Vraag service aan"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/annuleerbutton"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.15"
+            android:background="@drawable/roundedbutton"
+            android:focusableInTouchMode="true"
+            android:text="Annuleer"
+            android:textColor="#ffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
