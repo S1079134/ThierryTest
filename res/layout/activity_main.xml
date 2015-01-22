@@ -1,0 +1,101 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainlayout"
+    style="@android:style/Animation.Translucent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welkom" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+         android:orientation="vertical"
+        android:gravity="center_vertical|center_horizontal"
+        android:weightSum="1" >
+
+        <TextView
+            android:id="@+id/kiesservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.54"
+            android:text="Selecteer uw gewenste Service. "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical|center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin" >
+
+        <Button
+            android:id="@+id/ButtonRiolering"
+            style="@android:style/Animation.Translucent"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:gravity="center_vertical|center_horizontal|center"
+            android:onClick="Riolering"
+            android:singleLine="false"
+            android:text="Riolering"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/ButtonDak"
+            style="@android:style/Animation.Translucent"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:onClick="DakLekkage"
+            android:layout_margin="10dp"
+            android:text="Dak Lekkage"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/ButtonPrinses"
+            style="@android:style/Animation.Translucent"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/roundedbutton"
+            android:onClick="PrinsesInNood"
+            android:text="Prinses In Nood!"
+            android:textColor="#ffffff" />
+
+        <TextView
+            android:id="@+id/geselecteerdeservice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="0.54"
+            android:text="Klik voor aanvraag en meer Info. "
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffff"
+            android:textSize="20dp" />
+        
+    </LinearLayout>
+
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="5dp" >
+    </ListView>
+
+</LinearLayout>
